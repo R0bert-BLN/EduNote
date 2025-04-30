@@ -2,7 +2,7 @@
 
 ## Description
 
-EduNote is an application for managing student grades and evaluations.
+EduNote is an application for managing student grades.
 It features a dynamic frontend built with HTML, CSS, and JavaScript, and a robust backend in C++ using Crow framework.
 For admin users, they can add and remove student and professors. Professors have the posibility to create and delete courses,
 to add and remove students from courses and to edit students grades. And students can view the grades from all courses they are enrolled in.
