@@ -30,7 +30,6 @@ It features a dynamic frontend built with HTML, CSS, and JavaScript, and a robus
     *   C++ 
     *   [Crow](https://crowcpp.org/) 
     *   [SOCI](http://soci.sourceforge.net/) 
-        *   PostgreSQL Backend for SOCI
     *   [libsodium](https://libsodium.gitbook.io/doc/) 
 *   **Frontend:** HTML, CSS, JavaScript (Vanilla JS)
 *   **Database:** PostgreSQL 
@@ -41,7 +40,7 @@ It features a dynamic frontend built with HTML, CSS, and JavaScript, and a robus
 Before you begin, ensure you have the following installed:
 
 1.  **C++ Compiler:** A modern C++ compiler supporting C++17 or later (e.g., GCC, Clang, MSVC).
-2.  **vcpkg:** The C++ library manager. Follow the [official vcpkg installation guide](https://vcpkg.io/en/getting-started.html) to install and integrate it with your system (especially for Visual Studio or globally for CMake).
+2.  **vcpkg:** The C++ library manager.
 3.  **PostgreSQL Server:** A running instance of PostgreSQL server.
 
 ## Installation & Setup
@@ -54,17 +53,14 @@ Before you begin, ensure you have the following installed:
 
 2.  **Install C++ Dependencies using vcpkg:**
     *   Make sure vcpkg is correctly installed and integrated.
-    *   Run the following command from the **root directory of the vcpkg installation** (or ensure vcpkg is in your PATH):
+    *   Run the following command from the **root directory of the vcpkg installation**:
         ```bash
-        # Adjust './vcpkg' path if necessary
         ./vcpkg install crow soci[postgresql] libsodium
         ```
-    *   *Note:* Depending on your platform, you might need to specify the target triplet (e.g., `libsodium:x64-windows`).
 
 3.  **Database Setup:**
-    *   Ensure your PostgreSQL server is running.
-    *   Create a database and a user for the application.
-    *   Execute the SQL commands found in `.sql`  to create the necessary tables. You can use `psql` or a GUI tool like pgAdmin.
+    *   Create a database
+    *   Execute the SQL commands found in `.sql`  to create the necessary tables. 
 
 4.  **Environment Configuration:**
     *   Rename the `.env.example` file to `.env`.
