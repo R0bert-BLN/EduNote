@@ -47,7 +47,7 @@ Before you begin, ensure you have the following installed:
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repository-url> # TODO: Replace with your actual repo URL
+    git clone https://github.com/R0bert-BLN/EduNote.git
     cd EduNote
     ```
 
@@ -80,4 +80,4 @@ Before you begin, ensure you have the following installed:
 
 ## License
 
-This project is licensed under the XYZ License - see the [LICENSE](./LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
